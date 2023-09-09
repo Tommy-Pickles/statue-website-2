@@ -33,6 +33,7 @@ h1, h2 {
 .arial {
     font-family: Arial, sans-serif;
     font-size: large;
+
 }
 
 /* Set background color */
@@ -61,6 +62,7 @@ header, section {
     left: 0;
     width: 100%;
     height: 100%;
+    margin-left: 30px;
 }
 
 /* Style the text above the video */
@@ -127,6 +129,7 @@ header, section {
         padding-bottom: 40%; /* Adjust this value for the height */
         max-width: 90%; /* Adjust this value for the width */
         margin-bottom: 25px;
+        margin-left: 145px;
     }
 
     /* Style the text above the video for desktop */
@@ -164,4 +167,5 @@ header, section {
         margin-top: 25px; /* Adjust spacing for mobile */
         margin-bottom: 25px; /* Add margin below the video on mobile */
     }
+
 }

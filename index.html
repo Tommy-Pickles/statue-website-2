@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
@@ -12,15 +10,15 @@
 <body>
   <header>
     <h1 class="comic-sans comic-sans-title">
-        <span>D</span>
-        <span>o</span>
-        <span>g</span>
-        <span>e</span>
-        <span> </span>
-        <span>D</span>
-        <span>a</span>
-        <span>y</span>
-      </h1>
+      <span>D</span>
+      <span>o</span>
+      <span>g</span>
+      <span>e</span>
+      <span> </span>
+      <span>D</span>
+      <span>a</span>
+      <span>y</span>
+    </h1>
     <h2 class="comic-sans">And the unveiling of the Bronze Doge</h2>
   </header>
   <section>
@@ -34,7 +32,7 @@
       <p class="arial" style="margin-top: 20px;">Earlier this year, OwnTheDoge organized a Pilgrimage to Japan to “Meet The Doge”. It looked like this.</p>
     </div>
     <div class="video-container">
-      <iframe src="doge-motivation-vid-2.mp4" frameborder="0" allowfullscreen></iframe>
+      <iframe id="doge-video" src="doge-motivation-vid-2.mp4" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
   <section>
@@ -64,4 +62,20 @@
 
   </section>
 </body>
+<script>
+  // Adjust the iframe width to maintain aspect ratio
+  function adjustIframeWidth() {
+    const iframe = document.getElementById('doge-video');
+    const parentDiv = iframe.parentElement;
+    const aspectRatio = 16 / 9; // Adjust this as needed (e.g., 4/3 for 4:3 aspect ratio)
+
+    // Calculate the new width based on the height of the parent div
+    const newWidth = parentDiv.offsetHeight * aspectRatio;
+    iframe.style.width = `${newWidth}px`;
+  }
+
+  // Call the function on page load and when the window is resized
+  window.addEventListener('load', adjustIframeWidth);
+  window.addEventListener('resize', adjustIframeWidth);
+</script>
 </html>
