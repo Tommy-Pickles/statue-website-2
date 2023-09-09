@@ -1,0 +1,140 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Comic Sans font to elements with class 'comic-sans' */
+.comic-sans {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+/* Apply Arial font to elements with class 'arial' */
+.arial {
+    font-family: Arial, sans-serif;
+}
+
+/* Set background color */
+body {
+    background-color: #fbcc14;
+}
+
+/* Center the content */
+header, section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the video container */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40%; /* Adjust this value to control the height of the video container */
+    max-width: 90%; /* Adjust this value to control the max width of the video container */
+    margin: 20px auto 0; /* Add space above the video (top margin) */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the text above the video */
+.text-above-video {
+    max-width: 50%; /* Adjust this value to match the max width of the video */
+    margin: 0 auto; /* Center the text horizontally */
+}
+
+/* Add spacing below the video */
+.text-below-video {
+    margin-top: 20px; /* Adjust this value to control the spacing */
+    max-width: 60%; /* Adjust this value to match the max width of the video */
+    margin: 0 auto; /* Center the text horizontally */
+}
+
+/* Style the image */
+.text-below-video img {
+    display: block;
+    max-width: 80%; /* Adjust this value to control the max width of the image */
+    height: auto;
+    margin-top: 20px; /* Adjust this value for spacing */
+    margin-bottom: 20px; /* Adjust this value for spacing */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto;
+}
+
+/* Apply playful colors to each letter in the title */
+.comic-sans-title {
+    display: inline-block;
+    letter-spacing: -10px; /* Adjust this value to your preference */
+    animation: colorChange 2s infinite;
+    font-size: 60px; /* Increase font size for 'comic-sans' class */
+}
+
+.comic-sans-title span {
+    display: inline-block;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: orange;
+    }
+}
+
+/* Media query for desktop adjustments */
+@media only screen and (min-width: 701px) {
+    /* Style the video container for desktop */
+    .video-container {
+        padding-bottom: 40%; /* Adjust this value for the height */
+        max-width: 90%; /* Adjust this value for the width */
+        margin-bottom: 25px;
+    }
+
+    /* Style the text above the video for desktop */
+    .text-above-video {
+        max-width: 70%; /* Adjust this value to match the max width of the video on desktop */
+    }
+
+    /* Style the image for desktop */
+    .text-below-video img {
+        max-width: 100%; /* Adjust this value for the max width of the image on desktop */
+        margin-top: 25px; /* Adjust spacing for mobile */
+        margin-bottom: 25px; /* Adjust spacing for mobile */
+    }
+}
+
+/* Mobile responsiveness for the text */
+@media only screen and (max-width: 700px) {
+    /* Style the text above the video for mobile */
+    .text-above-video {
+        max-width: 200%; /* Adjust the maximum width as needed */
+        width: 200%; /* Set the width to 100% to maintain center alignment */
+        margin-left: -50%; /* Adjust negative margin to center the text */
+        margin-right: -50%; /* Adjust negative margin to center the text */
+        display: block; /* Remove any potential inline-block behavior */
+        margin-top: 15px; /* Adjust spacing for mobile */
+    }
+
+    /* Style the image for mobile */
+    .text-below-video img {
+        max-width: 150%; /* Adjust the maximum width as needed */
+        width: 150%; /* Set the width to 100% to maintain center alignment */
+        margin-left: -25%; /* Adjust negative margin to center the image */
+        margin-right: -25%; /* Adjust negative margin to center the image */
+        display: block; /* Remove any potential inline-block behavior */
+        margin-top: 25px; /* Adjust spacing for mobile */
+        margin-bottom: 25px; /* Add margin below the video on mobile */
+    }
+}
