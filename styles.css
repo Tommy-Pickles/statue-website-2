@@ -4,6 +4,17 @@ body, h1, h2, p {
     padding: 0;
 }
 
+/* Add a class to style the list */
+.bold-list {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove left padding for the list */
+  }
+  
+  .bold-list li {
+    font-weight: bold; /* Make list items bold */
+  }
+  
+
 /* Apply Comic Sans font to elements with class 'comic-sans' */
 .comic-sans {
     font-family: "Comic Sans MS", sans-serif;
