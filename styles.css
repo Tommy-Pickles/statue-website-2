@@ -8,21 +8,31 @@ body, h1, h2, p {
 .bold-list {
     list-style-type: none; /* Remove bullet points */
     padding-left: 0; /* Remove left padding for the list */
-  }
+}
   
-  .bold-list li {
+.bold-list li {
     font-weight: bold; /* Make list items bold */
-  }
-  
+}
 
 /* Apply Comic Sans font to elements with class 'comic-sans' */
 .comic-sans {
     font-family: "Comic Sans MS", sans-serif;
 }
 
+/* Apply Comic Sans font to elements with class 'comic-sans-title' */
+.comic-sans-title {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+/* Apply Comic Sans font to the title */
+h1, h2 {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
 /* Apply Arial font to elements with class 'arial' */
 .arial {
     font-family: Arial, sans-serif;
+    font-size: large;
 }
 
 /* Set background color */
@@ -81,7 +91,7 @@ header, section {
 .comic-sans-title {
     display: inline-block;
     letter-spacing: -10px; /* Adjust this value to your preference */
-    animation: colorChange 2s infinite;
+    animation: colorChange 3s infinite;
     font-size: 60px; /* Increase font size for 'comic-sans' class */
 }
 
@@ -106,6 +116,12 @@ header, section {
 
 /* Media query for desktop adjustments */
 @media only screen and (min-width: 701px) {
+    /* Style the text for desktop */
+    h1, h2, p {
+        margin-left: 200px; /* Add more left margin for desktop */
+        margin-right: 200px; /* Add more right margin for desktop */
+    }
+
     /* Style the video container for desktop */
     .video-container {
         padding-bottom: 40%; /* Adjust this value for the height */
