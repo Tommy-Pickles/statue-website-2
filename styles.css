@@ -83,7 +83,7 @@ header, section {
     display: block;
     max-width: 80%; /* Adjust this value to control the max width of the image */
     height: auto;
-    margin-top: 40px; /* Adjust this value for spacing */
+    margin-top: 70px; /* Adjust this value for spacing */
     margin-bottom: 40px; /* Adjust this value for spacing */
     margin-left: auto; /* Center the image horizontally */
     margin-right: auto;
@@ -140,8 +140,8 @@ header, section {
     /* Style the image for desktop */
     .text-below-video img {
         max-width: 100%; /* Adjust this value for the max width of the image on desktop */
-        margin-top: 25px; /* Adjust spacing for mobile */
-        margin-bottom: 25px; /* Adjust spacing for mobile */
+        margin-top: 50px; /* Adjust spacing for mobile */
+        margin-bottom: 50px; /* Adjust spacing for mobile */
     }
 }
 
