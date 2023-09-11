@@ -172,4 +172,8 @@ header, section {
         margin-top: 25px; /* Adjust spacing for mobile */
         margin-bottom: 25px; /* Add margin below the video on mobile */
     }
+
+    .video-container {
+        margin-right: 50px;
+    }
 }
