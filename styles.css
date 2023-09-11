@@ -62,7 +62,7 @@ header, section {
     left: 0;
     width: 100%;
     height: 100%;
-    margin-left: 30px;
+    margin-left: 300px;
 }
 
 /* Style the text above the video */
@@ -94,7 +94,7 @@ header, section {
     display: inline-block;
     letter-spacing: -10px; /* Adjust this value to your preference */
     animation: colorChange 3s infinite;
-    font-size: 80px; /* Increase font size for 'comic-sans' class */
+    font-size: 60px; /* Increase font size for 'comic-sans' class */
 }
 
 .comic-sans-title span {
@@ -124,12 +124,10 @@ header, section {
         margin-right: 200px; /* Add more right margin for desktop */
     }
 
-    /* Style the video container for desktop */
     .video-container {
         padding-bottom: 40%; /* Adjust this value for the height */
-        max-width: 90%; /* Adjust this value for the width */
+        max-width: 80%; /* Adjust this value for the width */
         margin-bottom: 25px;
-        margin-left: 184px;
     }
 
     /* Style the text above the video for desktop */
