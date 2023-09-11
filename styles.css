@@ -38,7 +38,7 @@ h1, h2 {
 
 /* Set background color */
 body {
-    background-color: #fbcc14;
+    background-color: #f3ebd6;
 }
 
 /* Center the content */
@@ -53,7 +53,7 @@ header, section {
     overflow: hidden;
     padding-bottom: 40%; /* Adjust this value to control the height of the video container */
     max-width: 90%; /* Adjust this value to control the max width of the video container */
-    margin: 20px auto 0; /* Add space above the video (top margin) */
+    margin: 40px auto 0; /* Add space above the video (top margin) */
 }
 
 .video-container iframe {
@@ -83,8 +83,8 @@ header, section {
     display: block;
     max-width: 80%; /* Adjust this value to control the max width of the image */
     height: auto;
-    margin-top: 20px; /* Adjust this value for spacing */
-    margin-bottom: 20px; /* Adjust this value for spacing */
+    margin-top: 40px; /* Adjust this value for spacing */
+    margin-bottom: 40px; /* Adjust this value for spacing */
     margin-left: auto; /* Center the image horizontally */
     margin-right: auto;
 }
@@ -94,7 +94,7 @@ header, section {
     display: inline-block;
     letter-spacing: -10px; /* Adjust this value to your preference */
     animation: colorChange 3s infinite;
-    font-size: 60px; /* Increase font size for 'comic-sans' class */
+    font-size: 80px; /* Increase font size for 'comic-sans' class */
 }
 
 .comic-sans-title span {
@@ -129,7 +129,7 @@ header, section {
         padding-bottom: 40%; /* Adjust this value for the height */
         max-width: 90%; /* Adjust this value for the width */
         margin-bottom: 25px;
-        margin-left: 145px;
+        margin-left: 184px;
     }
 
     /* Style the text above the video for desktop */
@@ -157,6 +157,13 @@ header, section {
         margin-top: 15px; /* Adjust spacing for mobile */
     }
 
+    /* Apply left alignment to the text elements within .text-above-video */
+    .text-above-video h1,
+    .text-above-video h2,
+    .text-above-video p {
+        text-align: left; /* Left-align text on mobile */
+    }
+
     /* Style the image for mobile */
     .text-below-video img {
         max-width: 150%; /* Adjust the maximum width as needed */
@@ -167,5 +174,4 @@ header, section {
         margin-top: 25px; /* Adjust spacing for mobile */
         margin-bottom: 25px; /* Add margin below the video on mobile */
     }
-
 }
