@@ -29,6 +29,10 @@ h1, h2 {
     font-family: 'Comic Neue', sans-serif;
 }
 
+h2 {
+    font-size: x-large;
+}
+
 /* Apply Arial font to elements with class 'arial' */
 .arial {
     font-family: Arial, sans-serif;
