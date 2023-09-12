@@ -26,7 +26,7 @@ body, h1, h2, p {
 
 /* Apply Comic Sans font to the title */
 h1, h2 {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 /* Apply Arial font to elements with class 'arial' */
