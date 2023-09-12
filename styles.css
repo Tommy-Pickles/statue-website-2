@@ -16,7 +16,7 @@ body, h1, h2, p {
 
 /* Apply Comic Sans font to elements with class 'comic-sans' */
 .comic-sans {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 /* Apply Comic Sans font to elements with class 'comic-sans-title' */
