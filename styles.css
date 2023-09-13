@@ -112,7 +112,7 @@ header, section {
 /* Apply playful colors to each letter in the title */
 .comic-sans-title {
     display: inline-block;
-    letter-spacing: -10px; /* Adjust this value to your preference */
+    letter-spacing: -2px; /* Adjust this value to your preference */
     animation: colorChange 3s infinite;
     font-size: 80px; /* Increase font size for 'comic-sans' class */
 }
