@@ -69,6 +69,13 @@ header, section {
     margin: 40px auto 0; /* Add space above the video (top margin) */
 }
 
+.youtube-video-container {
+    margin-left: auto; /* Center the video horizontally */
+    margin-right: auto; /* Center the video horizontally */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    margin-right: 1000px;
+  }
+
 .video-container iframe {
     position: absolute;
     top: 0;
@@ -107,7 +114,7 @@ header, section {
     display: inline-block;
     letter-spacing: -10px; /* Adjust this value to your preference */
     animation: colorChange 3s infinite;
-    font-size: 60px; /* Increase font size for 'comic-sans' class */
+    font-size: 80px; /* Increase font size for 'comic-sans' class */
 }
 
 .comic-sans-title span {
@@ -141,6 +148,7 @@ header, section {
         padding-bottom: 40%; /* Adjust this value for the height */
         max-width: 80%; /* Adjust this value for the width */
         margin-bottom: 25px;
+
     }
 
     /* Style the text above the video for desktop */
